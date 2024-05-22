@@ -1,6 +1,14 @@
 # find if the given number is a palindrome or not?
-n=("Enter The String")
-if(n==n[::-1]):
-  print("it is palindrome)
+
+def isPalindrome(s):
+	return s == s[::-1]
+
+
+# Driver code
+s = "malayalam"
+ans = isPalindrome(s)
+
+if ans:
+	print("Yes")
 else:
-  print("it is not a palindrome)
+	print("No")
